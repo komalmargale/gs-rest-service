@@ -14,10 +14,10 @@ public class WordService {
 		if(checkPalindrome(word) && canFormPalindrome(word))
 	      {
 	    	   return new ResponseEntity<>("word :"+ word + "    "+"palindrome :"+ checkPalindrome( word) +  "      "+
-	    				"anagram :"   +  canFormPalindrome( word) , HttpStatus.OK);
+	    				"anagramOfPalindrome :"   +  canFormPalindrome( word) , HttpStatus.OK);
 	      }
 		return new ResponseEntity<>("word :"+ word + "    "+"palindrome :"+ false +  "      "+
-				"anagram :"   +  canFormPalindrome( word) , HttpStatus.OK);
+				"anagramOfPalindrome :"   +  canFormPalindrome( word) , HttpStatus.OK);
 		   
 	}
 	
